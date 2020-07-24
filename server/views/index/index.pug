@@ -1,0 +1,30 @@
+extends ../layout/index 
+block slider
+    .slider
+        h1 Río de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="alt" class="img-fluid")
+        h2.text-center.mb-5 Próximos viajes
+        include ../layout/partials/viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo 2020 - 28 de Marzo de 2020
+                        p.precio $2500 USD
+    .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
+
